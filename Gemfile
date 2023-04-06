@@ -73,3 +73,4 @@ end
 
 gem "ffaker"
 gem "rack-cors"
+gem "seed_dump"

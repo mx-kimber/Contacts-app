@@ -1,10 +1,21 @@
-10.times do
-  contact = Contact.new(
-    first_name: FFaker::Name.unique.first_name,
-    last_name: FFaker::Name.last_name,
-    email: FFaker::Internet.email,
-    phone_number:FFaker::PhoneNumber.phone_number
-  )
-  contact.save
-end
-
+Contact.create!([
+  {first_name: "Tracy", last_name: "Wilkinson", email: "tiffani@corwin.co.uk", phone_number: "(550)885-2654"},
+  {first_name: "Leonor", last_name: "Legros", email: "elfriede@klein.name", phone_number: "585-736-0724 x69010"},
+  {first_name: "Velva", last_name: "Rutherford", email: "corina@stromanmuller.name", phone_number: "(209)384-7522"},
+  {first_name: "Ernesto", last_name: "Klein", email: "omar@sipes.co.uk", phone_number: "255.362.1581 x2883"},
+  {first_name: "Malissa", last_name: "Schinner", email: "jeramy@hilllkessler.com", phone_number: "1-935-239-7225 x7790"},
+  {first_name: "Rolando", last_name: "Rogahn", email: "dianna.kirlin@yost.us", phone_number: "896.336.1864 x737"},
+  {first_name: "Danika", last_name: "Thompson", email: "desmond_labadie@will.info", phone_number: "688-998-1949 x01132"},
+  {first_name: "Buffy", last_name: "Bechtelar", email: "lasonya@casper.com", phone_number: "1-844-732-0286 x425"},
+  {first_name: "Saran", last_name: "Anderson", email: "makeda.collier@volkman.us", phone_number: "619-365-9852"},
+  {first_name: "Felicidad", last_name: "Kassulke", email: "zada@jenkinsbergnaum.us", phone_number: "1-379-840-2831 x31740"},
+  {first_name: "Rosa", last_name: "Prosacco", email: "reynalda_durgan@kshlerinmurphy.ca", phone_number: "(918)383-8935"},
+  {first_name: "Margery", last_name: "Wilkinson", email: "marita@boganfeeney.name", phone_number: "(551)904-7864"},
+  {first_name: "Arnette", last_name: "Huels", email: "stephani@millerkulas.co.uk", phone_number: "1-746-979-8242"},
+  {first_name: "Malcom", last_name: "Legros", email: "tashia@lind.us", phone_number: "(451)762-3862 x1600"},
+  {first_name: "Bobette", last_name: "Dickens", email: "adan@rippin.us", phone_number: "786-458-0094 x189"},
+  {first_name: "Drucilla", last_name: "Stanton", email: "terence_gleason@skilesbahringer.name", phone_number: "970-663-5467 x8780"},
+  {first_name: "Aliza", last_name: "Toy", email: "ammie@bednar.ca", phone_number: "1-857-849-1966 x395"},
+  {first_name: "Sandra", last_name: "Jacobi", email: "kathyrn.reichel@hegmann.com", phone_number: "(270)556-4890 x013"},
+  {first_name: "Korben", last_name: "Gottlieb", email: "mirna@haley.info", phone_number: "705.898.2837"}
+])
