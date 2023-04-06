@@ -6,18 +6,20 @@ class ContactsController < ApplicationController
   end
 
   def show
-    @contact = contact.find_by(id: params[:id])
+    @contact = Contact.find_by(id: params[:id])
     render :show
   end
 
   def create
-    @contact = contact.new(
-    contact: first_name = params[:first_name],
-    contact: last_name = params[:first_name],
-    contact: email = params[:email],
-    contact: phone_number = params[:phone_number] # remember comma when adding
+    @contact = Contacts.new(
+      contact: first_name = params[:first_name],
+      contact: last_name = params[:last_name],
+      contact: email = params[:email],
+      contact: phone_number = params[:phone_number] # remember comma when adding
 
     )
+    @contact.save
     render :show
+
   end
 end
