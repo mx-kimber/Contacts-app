@@ -74,4 +74,4 @@ end
 gem "ffaker"
 gem "rack-cors"
 gem "seed_dump"
-gem "geo_coder"
+gem "geocoder"
