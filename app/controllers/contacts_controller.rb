@@ -39,4 +39,4 @@ class ContactsController < ApplicationController
     render json: {message: "contact destroyed"}
   end
 
-end
+
